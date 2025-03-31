@@ -156,3 +156,5 @@
 	Mean Cosine Similarity = 0.722
 	Std Dev = 0.137 (Higher variance, meaning samples are spread across different difficulty levels)
  
+## Facial Data Synthesis
+![collage_page-0001](https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/facial_data_synthesis.png)
