@@ -144,4 +144,15 @@
   </tbody>
 </table>
 
-![collage_page-0001](https://github.com/MuskanDosi12/HyperSpaceX/blob/main/HyperSpaceXFrameworkVisualAbstract.jpg)
+
+## Sample Distribution across Sub-Cones (Gaussian vs. vMF)
+![collage_page-0001](https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/sample_distribution_subcone.png)
+
+### Quantitative Metrics
+#### Gaussian-based
+	Mean Cosine Similarity = 0.900
+	Std Dev = 0.048 (Low variance, meaning samples are mostly near the mean)
+#### vMF-based
+	Mean Cosine Similarity = 0.722
+	Std Dev = 0.137 (Higher variance, meaning samples are spread across different difficulty levels)
+ 
