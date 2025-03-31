@@ -1,6 +1,6 @@
 # Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres
 
-## Effect of using `kappa` scheduler. Comparative analysis of using the `kappa` scheduler on two datasets for various evaluation metrics.
+## Effect of using `kappa` scheduler. Comparative analysis of using the `kappa` scheduler on two datasets for various evaluation metrics
 <table>
   <tr>
     <th></th>
@@ -44,7 +44,7 @@
   </tr>
 </table>
 
-## Comparative analysis of `Euclidean` and `Angular` based reverse denoising step for `CIFAR-10` dataset. Various score functions are also used for evaluation.
+## Comparative analysis of `Euclidean` and `Angular` based reverse denoising step for `CIFAR-10` dataset. Various score functions are also used for evaluation
 <table>
   <tr>
     <th></th>
@@ -76,7 +76,7 @@
   </tr>
 </table>
 
-## Comparative analysis of `Euclidean` and `Angular` based reverse denoising step for `MNIST` dataset.
+## Comparative analysis of `Euclidean` and `Angular` based reverse denoising step for `MNIST` dataset
 <table>
   <tr>
     <th></th>
@@ -158,3 +158,17 @@
  
 ## Facial Data Synthesis
 ![collage_page-0001](https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/facial_data_synthesis.png)
+
+
+## Visualization of `Training` and `Sampling` process on 2D circles
+
+Training Process             |  Sampling Process
+:-------------------------:|:-------------------------:
+Gaussian Diffusion: Final Reversed Points            |  vMF Diffusion: Final Reversed Points
+![](https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/gaussian_final_reversed_points.png) |  ![](https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/vmf_final_reversed_points.png)
+
+
+Training Process             |  Sampling Process
+:-------------------------:|:-------------------------:
+Forward Process in vMF-based Diffusion        |  Reverse Process in vMF-based Diffusion 
+![](https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/gaussian_final_reversed_points.png) |  ![](https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/vmf_final_reversed_points.png)
