@@ -144,6 +144,9 @@
   </tbody>
 </table>
 
+## Table 5: Ablation study 
+
+
 
 ## Figure 1: Sample Distribution across Sub-Cones (Gaussian vs. vMF)
 <img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/sample_distribution_subcone.png" width="400"/>
@@ -167,12 +170,17 @@ Training Process             |  Sampling Process
 Gaussian Diffusion: Final Reversed Points            |  vMF Diffusion: Final Reversed Points
 <img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/gaussian_final_reversed_points.png" width="400"/> | <img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/vmf_final_reversed_points.png" width="400"/>
 
+Figure 2: Comparison of final denoised embeddings under Gaussian and vMF-based diffusion. The left plot shows that Gaussian diffusion produces samples evenly spread around the circle, disregarding class structure. In contrast, the right plot demonstrates that vMF-based diffusion preserves clear angular separation between class clusters, aligning with the underlying hyperspherical manifold.
+
 
 Training Process             |  Sampling Process
 :-------------------------:|:-------------------------:
 Forward Process in vMF-based Diffusion        |  Reverse Process in vMF-based Diffusion 
 <img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/gaussian_final_reversed_points.png" width="400"/> | <img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/vmf_final_reversed_points.png" width="400"/>
 
+Figure (left): Training process illustration on a 2D circle. The figure shows the progressive alignment of data points to class-specific regions on the circle during training. Initially, embeddings are randomly scattered, and as training proceeds, they converge toward structured, well-separated clusters corresponding to different classes.
+
+Figure (right): Sampling process illustration on a 2D circle. The figure visualizes the reverse diffusion process. Starting from noise, embeddings gradually move toward class-specific clusters, reconstructing structured data aligned with class semantics.
 
 
 ## Figure 3: 3D Feature representation of the 10-class CIFAR-10 dataset 
