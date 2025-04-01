@@ -203,7 +203,7 @@ Figure 2: Comparison of final denoised embeddings under Gaussian and vMF-based d
 Training Process             |  Sampling Process
 :-------------------------:|:-------------------------:
 Forward Process in vMF-based Diffusion        |  Reverse Process in vMF-based Diffusion 
-<img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/gaussian_final_reversed_points.png" width="400"/> | <img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/vmf_final_reversed_points.png" width="400"/>
+<img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/diffusion_process1.gif" width="400"/> | <img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/reversed.gif" width="400"/>
 
 Figure (left): Training process illustration on a 2D circle. The figure shows the progressive alignment of data points to class-specific regions on the circle during training. Initially, embeddings are randomly scattered, and as training proceeds, they converge toward structured, well-separated clusters corresponding to different classes.
 
