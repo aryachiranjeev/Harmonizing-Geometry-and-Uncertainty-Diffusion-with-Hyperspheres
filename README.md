@@ -145,7 +145,7 @@
 </table>
 
 
-## Sample Distribution across Sub-Cones (Gaussian vs. vMF)
+## Figure 1: Sample Distribution across Sub-Cones (Gaussian vs. vMF)
 <img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/sample_distribution_subcone.png" width="400"/>
 
 #### Quantitative Metrics
@@ -160,7 +160,7 @@
 <img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/facial_data_synthesis.png" width="600"/>
 
 
-## Visualization of `Training` and `Sampling` process on 2D circles
+## Figure 2: Visualization of `Training` and `Sampling` process on 2D circles
 
 Training Process             |  Sampling Process
 :-------------------------:|:-------------------------:
@@ -175,7 +175,7 @@ Forward Process in vMF-based Diffusion        |  Reverse Process in vMF-based Di
 
 
 
-## 3D Feature representation of the 10-class CIFAR-10 dataset 
+## Figure 3: 3D Feature representation of the 10-class CIFAR-10 dataset 
 
 Gaussian Diffusion: Reversed            |   vMF Diffusion: Reversed 
 :-------------------------:|:-------------------------:
@@ -185,7 +185,7 @@ Gaussian Diffusion: Reversed            |   vMF Diffusion: Reversed
 	The vMF-based sampling aligns generated sample features within class-specific 3D hypercones, while Gaussian-based sampling results in scattered features outside the class-hypercones.
 
 
- ## Generated Facial Samples
+ ## Figure 4: Generated Facial Samples
 <img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/fig4a_gaussian_face.png" width="400"/>
 <img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/fig4a_vmf_face.png" width="400"/>
 
@@ -193,7 +193,7 @@ Gaussian Diffusion: Reversed            |   vMF Diffusion: Reversed
  	It highlights the improved variation in pose, illumination, expression, and quality with vMF.
 
 
- ## Measuring the variations between `Real` and `Generated` CIFAR-10 samples
+ ## Figure 5: Measuring the variations between `Real` and `Generated` CIFAR-10 samples
  <img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/nearest_neighbor_matching.png" width="400"/>
 
  	Nearest Neighbor Matching between Generated and Real Samples on CIFAR-10. 
@@ -201,7 +201,7 @@ Gaussian Diffusion: Reversed            |   vMF Diffusion: Reversed
    	Dashed lines connect each real sample to its nearest generated counterpart.
 
 
- ## t-SNE Visualization of `Real` vs. `Generated` samples
+ ## Figure 6: t-SNE Visualization of `Real` vs. `Generated` samples
 <img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/tsne_10_classes.png" width="400"/>
 
  	t-SNE visualization of real vs generated samples across 10 classes. 
