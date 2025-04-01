@@ -1,6 +1,6 @@
 # Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres
 
-## Effect of using `kappa` scheduler. Comparative analysis of using the `kappa` scheduler on two datasets for various evaluation metrics
+## Table 1: Effect of using `kappa` scheduler. Comparative analysis of using the `kappa` scheduler on two datasets for various evaluation metrics
 <table>
   <tr>
     <th></th>
@@ -44,7 +44,7 @@
   </tr>
 </table>
 
-## Comparative analysis of `Euclidean` and `Angular` based reverse denoising step for `CIFAR-10` dataset. Various score functions are also used for evaluation
+## Table 2: Comparative analysis of `Euclidean` and `Angular` based reverse denoising step for `CIFAR-10` dataset. Various score functions are also used for evaluation
 <table>
   <tr>
     <th></th>
@@ -76,7 +76,7 @@
   </tr>
 </table>
 
-## Comparative analysis of `Euclidean` and `Angular` based reverse denoising step for `MNIST` dataset
+## Table 3: Comparative analysis of `Euclidean` and `Angular` based reverse denoising step for `MNIST` dataset
 <table>
   <tr>
     <th></th>
@@ -108,7 +108,7 @@
   </tr>
 </table>
 
-## Comparative analysis of `Euclidean` and `Angular` based reverse denoising step for `D-LORD` dataset
+## Table 4: Comparative analysis of `Euclidean` and `Angular` based reverse denoising step for `D-LORD` dataset
 <table>
   <thead>
     <tr>
