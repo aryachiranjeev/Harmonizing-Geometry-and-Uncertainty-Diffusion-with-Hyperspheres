@@ -218,6 +218,7 @@ Gaussian Diffusion: Reversed            |   vMF Diffusion: Reversed
 
  ## Figure 4: Generated Facial Samples
 <img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/fig4a_gaussian_face.png" width="400"/>
+<br>
 <img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/fig4a_vmf_face.png" width="400"/>
 
 #### Fig. 4: Comparison of samples generated using Gaussian (top row) and vMF diffusion models (bottom row). It highlights the improved variation in pose, illumination, expression, and quality with vMF.
