@@ -213,7 +213,7 @@ Forward Process in vMF-based Diffusion        |  Reverse Process in vMF-based Di
 Gaussian Diffusion: Reversed            |   vMF Diffusion: Reversed 
 :-------------------------:|:-------------------------:
 <img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/gaussian_diffusion_reversed_cifar10_3d.png" width="400"/> | <img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/vmf_diffusion_reversed_cifar10_3d.png" width="400"/>
-#### Figure 3: Feature representation of the 10-class CIFAR-10 dataset generated using Gaussian-based diffusion (left) and vMF-based diffusion (right). The vMF-based sampling aligns generated sample features within class-specific 3D hypercones, while Gaussian-based sampling results in scattered features outside the class-hypercones.
+#### Fig. 3: Feature representation of the 10-class CIFAR-10 dataset generated using Gaussian-based diffusion (left) and vMF-based diffusion (right). The vMF-based sampling aligns generated sample features within class-specific 3D hypercones, while Gaussian-based sampling results in scattered features outside the class-hypercones.
 
 
  ## Figure 4: Generated Facial Samples
