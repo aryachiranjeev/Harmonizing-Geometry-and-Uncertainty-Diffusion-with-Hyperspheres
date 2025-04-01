@@ -155,7 +155,8 @@
 ##### vMF-based
 	Mean Cosine Similarity = 0.722
 	Std Dev = 0.137 (Higher variance, meaning samples are spread across different difficulty levels)
- 
+
+ Gaussian-based diffusion generates samples tightly clustered near the class mean (high similarity, low variance), favoring easier cases. In contrast, vMF-based diffusion produces a more diverse spread (lower similarity, higher variance), ensuring better coverage across difficulty levels.
 
 
 
