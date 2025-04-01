@@ -156,8 +156,7 @@
 	Mean Cosine Similarity = 0.722
 	Std Dev = 0.137 (Higher variance, meaning samples are spread across different difficulty levels)
  
-## Facial Data Synthesis
-<img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/facial_data_synthesis.png" width="600"/>
+
 
 
 ## Figure 2: Visualization of `Training` and `Sampling` process on 2D circles
@@ -207,3 +206,5 @@ Gaussian Diffusion: Reversed            |   vMF Diffusion: Reversed
  	t-SNE visualization of real vs generated samples across 10 classes. 
   	Real samples (dots) and generated samples (crosses) form distinct clusters, demonstrating the model’s ability to capture class-specific structures while introducing some variation in feature representation.
 
+## Figure 7: Facial Data Synthesis
+<img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/facial_data_synthesis.png" width="600"/>
