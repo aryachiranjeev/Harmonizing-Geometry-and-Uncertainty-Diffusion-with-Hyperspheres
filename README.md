@@ -178,6 +178,8 @@
 ## Figure 1: Sample Distribution across Sub-Cones (Gaussian vs. vMF)
 <img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/sample_distribution_subcone.png" width="400"/>
 
+#### Fig. 1: Gaussian-based diffusion generates samples tightly clustered near the class mean (high similarity, low variance), favoring easier cases. In contrast, vMF-based diffusion produces a more diverse spread (lower similarity, higher variance), ensuring better coverage across difficulty levels.
+
 #### Quantitative Metrics
 ##### Gaussian-based
 	Mean Cosine Similarity = 0.900
@@ -186,28 +188,24 @@
 	Mean Cosine Similarity = 0.722
 	Std Dev = 0.137 (Higher variance, meaning samples are spread across different difficulty levels)
 
- Gaussian-based diffusion generates samples tightly clustered near the class mean (high similarity, low variance), favoring easier cases. In contrast, vMF-based diffusion produces a more diverse spread (lower similarity, higher variance), ensuring better coverage across difficulty levels.
 
 
+## Figure 2: Visualization of Diffusion processes on 2D circles
 
-## Figure 2: Visualization of `Training` and `Sampling` process on 2D circles
-
-Training Process             |  Sampling Process
+### Figure 2a: Visualization comparison for Gaussian and vMF based Diffusion
+Gaussian Diffusion: Final Reversed Points |   vMF Diffusion: Final Reversed Points
 :-------------------------:|:-------------------------:
-Gaussian Diffusion: Final Reversed Points            |  vMF Diffusion: Final Reversed Points
 <img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/gaussian_final_reversed_points.png" width="400"/> | <img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/vmf_final_reversed_points.png" width="400"/>
+#### Fig. 2a: Comparison of final denoised embeddings under Gaussian and vMF-based diffusion. The left plot shows that Gaussian diffusion produces samples evenly spread around the circle, disregarding class structure. In contrast, the right plot demonstrates that vMF-based diffusion preserves clear angular separation between class clusters, aligning with the underlying hyperspherical manifold.
 
-Figure 2: Comparison of final denoised embeddings under Gaussian and vMF-based diffusion. The left plot shows that Gaussian diffusion produces samples evenly spread around the circle, disregarding class structure. In contrast, the right plot demonstrates that vMF-based diffusion preserves clear angular separation between class clusters, aligning with the underlying hyperspherical manifold.
-
-
+### Figure 2b: Evolution into structured clusters during `Training` and `Sampling` process for vMF based Diffusion
 Training Process             |  Sampling Process
 :-------------------------:|:-------------------------:
 Forward Process in vMF-based Diffusion        |  Reverse Process in vMF-based Diffusion 
 <img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/diffusion_process1.gif" width="400"/> | <img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/reversed.gif" width="400"/>
+#### Fig. 2b(left): Training process illustration on a 2D circle. The figure shows the progressive alignment of data points to class-specific regions on the circle during training. Initially, embeddings are randomly scattered, and as training proceeds, they converge toward structured, well-separated clusters corresponding to different classes.
 
-Figure (left): Training process illustration on a 2D circle. The figure shows the progressive alignment of data points to class-specific regions on the circle during training. Initially, embeddings are randomly scattered, and as training proceeds, they converge toward structured, well-separated clusters corresponding to different classes.
-
-Figure (right): Sampling process illustration on a 2D circle. The figure visualizes the reverse diffusion process. Starting from noise, embeddings gradually move toward class-specific clusters, reconstructing structured data aligned with class semantics.
+#### Fig. 2b(right): Sampling process illustration on a 2D circle. The figure visualizes the reverse diffusion process. Starting from noise, embeddings gradually move toward class-specific clusters, reconstructing structured data aligned with class semantics.
 
 
 ## Figure 3: 3D Feature representation of the 10-class CIFAR-10 dataset 
@@ -215,32 +213,28 @@ Figure (right): Sampling process illustration on a 2D circle. The figure visuali
 Gaussian Diffusion: Reversed            |   vMF Diffusion: Reversed 
 :-------------------------:|:-------------------------:
 <img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/gaussian_diffusion_reversed_cifar10_3d.png" width="400"/> | <img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/vmf_diffusion_reversed_cifar10_3d.png" width="400"/>
-
-	Feature representation of the 10-class CIFAR-10 dataset generated using Gaussian-based diffusion (left) and vMF-based diffusion (right). 
-	The vMF-based sampling aligns generated sample features within class-specific 3D hypercones, while Gaussian-based sampling results in scattered features outside the class-hypercones.
+#### Figure 3: Feature representation of the 10-class CIFAR-10 dataset generated using Gaussian-based diffusion (left) and vMF-based diffusion (right). The vMF-based sampling aligns generated sample features within class-specific 3D hypercones, while Gaussian-based sampling results in scattered features outside the class-hypercones.
 
 
  ## Figure 4: Generated Facial Samples
 <img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/fig4a_gaussian_face.png" width="400"/>
 <img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/fig4a_vmf_face.png" width="400"/>
 
-	Comparison of samples generated using Gaussian (top row) and vMF diffusion models (bottom row).
- 	It highlights the improved variation in pose, illumination, expression, and quality with vMF.
+#### Fig. 4: Comparison of samples generated using Gaussian (top row) and vMF diffusion models (bottom row). It highlights the improved variation in pose, illumination, expression, and quality with vMF.
 
 
  ## Figure 5: Measuring the variations between `Real` and `Generated` CIFAR-10 samples
  <img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/nearest_neighbor_matching.png" width="400"/>
 
- 	Nearest Neighbor Matching between Generated and Real Samples on CIFAR-10. 
-  	Each real sample (blue dot) undergoes a noise addition process, and its denoised counterpart (red cross) is placed in the space. 
-   	Dashed lines connect each real sample to its nearest generated counterpart.
+#### Fig. 5: Nearest Neighbor Matching between Generated and Real Samples on CIFAR-10. Each real sample (blue dot) undergoes a noise addition process, and its denoised counterpart (red cross) is placed in the space. Dashed lines connect each real sample to its nearest generated counterpart.
 
 
  ## Figure 6: t-SNE Visualization of `Real` vs. `Generated` samples
 <img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/tsne_10_classes.png" width="400"/>
 
- 	t-SNE visualization of real vs generated samples across 10 classes. 
-  	Real samples (dots) and generated samples (crosses) form distinct clusters, demonstrating the model’s ability to capture class-specific structures while introducing some variation in feature representation.
+#### Fig. 6: t-SNE visualization of real vs generated samples across 10 classes. Real samples (dots) and generated samples (crosses) form distinct clusters, demonstrating the model’s ability to capture class-specific structures while introducing some variation in feature representation.
 
 ## Figure 7: Facial Data Synthesis
 <img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/facial_data_synthesis.png" width="600"/>
+
+#### Fig. 7: Facial data synthesis demonstrates variations across occlusion, pose and resolution.
