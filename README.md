@@ -145,7 +145,34 @@
 </table>
 
 ## Table 5: Ablation study 
-
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3"></th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Gaussian</th>
+      <th>Gaussian + Spherical</th>
+      <th>Spherical</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Celeb-A</td>
+      <td>9.31</td>
+      <td><b>9.29</b></td>
+      <td>9.31</td>
+    </tr>
+    <tr>
+      <td>D-LORD</td>
+      <td>11.38</td>
+      <td><b>9.27</b></td>
+      <td>10.94</td>
+    </tr>
+  </tbody>
+</table>
 
 
 ## Figure 1: Sample Distribution across Sub-Cones (Gaussian vs. vMF)
