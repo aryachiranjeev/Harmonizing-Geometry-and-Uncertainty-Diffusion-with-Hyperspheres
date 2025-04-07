@@ -240,8 +240,3 @@ Gaussian Diffusion: Reversed            |   vMF Diffusion: Reversed
 <img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/facial_data_synthesis.png" width="600"/>
 
 #### Fig. 7: Facial data synthesis demonstrates variations across occlusion, pose and resolution.
-
-## Figure 8: Facial Interpolation
-<img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/facial_interpolation.png" width="600"/>
-
-#### Fig. 8: Interpolation results between facial images using our proposed method. The top and middle rows show angular interpolations between source and target identities with differing head poses and expressions. The bottom row illustrates angular transition during sampling across various facial expressions of the same identity. Our method smoothly transitions between images, preserving structural features like head orientation and expression, demonstrating the effectiveness of angular updates and the underlying hypercone representation.
