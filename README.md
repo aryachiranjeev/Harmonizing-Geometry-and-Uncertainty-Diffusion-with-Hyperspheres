@@ -240,3 +240,8 @@ Gaussian Diffusion: Reversed            |   vMF Diffusion: Reversed
 <img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/facial_data_synthesis.png" width="600"/>
 
 #### Fig. 7: Facial data synthesis demonstrates variations across occlusion, pose and resolution.
+
+## Figure 8: Interpolation Comparison for Same Subject Variations.
+<img src="https://github.com/aryachiranjeev/Harmonizing-Geometry-and-Uncertainty-Diffusion-with-Hyperspheres/blob/main/interpolation1.png" width="600"/>
+
+#### Fig. 8: Comparison between interpolation using Gaussian based diffusion and vMF based diffusion for generating images between two variants of the same subject: (a) Expression (b) Pose.
